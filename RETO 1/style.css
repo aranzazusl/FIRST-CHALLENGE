@@ -1,0 +1,196 @@
+#wrapper {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+
+body { 
+    font-family: "Arial", sans-serif;
+    background-color: white;
+}
+
+/* header */
+
+header {
+  background-color: white;
+  background: url('https://i.imgur.com/HFW9yj5.jpg');
+  background-size: cover;
+  text-align: center;
+  height: 300px;
+}
+
+/* En cuanto a las imágenes, las he subido todas a Imgur, pero a veces veo que no se muestran en la página y tengo que volver a poner la dirección para que se muestren. ¿Hay alguna recomendación para evitar esto u otro servicio mejor para usar fotos? */
+
+.logo img {
+  max-width: 40%
+}
+
+/* nav section */
+
+.main_menu {
+  float: none;
+  padding: 5px 0 5px 0;
+  text-align: center;
+  line-height: 32px;
+  background-color: #A8030D;
+}
+
+@media screen and (max-width: 600px) {
+  .main_menu {
+    float: none;
+    display: block;
+    width: 50%;
+  }
+}
+
+ul.main_menu {
+  margin-top: 15px;
+}
+
+.main_menu li {
+  display: inline;
+  padding: 0 10px 0 10px;
+  font-size: 20px;
+}
+
+.main_menu a {
+  text-decoration: none !important;
+  color: black;
+  padding: 8px;
+  font-variant: small-caps;
+}
+
+.main_menu a:hover {
+  color: #EDC827;
+}
+/* home page with flexbox layout */
+
+.flex-container {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: no-wrap;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  margin: 10px;
+  text-align: center;
+}
+
+/* No he podido hacer que las cuatro cajas tengan todas el mismo ancho cuando no hay media query (es decir, en tamaño de navegador). ¿Hay algo que esté haciendo mal? Pensaba que con flex-grow se solucionaría. También, al reducir el tamaño del navegador, las cajas aparecen por encima del footer. ¿Cómo puedo solucionarlo? */
+
+@media screen and (max-width: 600px) {
+  .flex-container {
+    flex-flow:wrap;  
+    height:40px; 
+    width: 48%;  
+  }    
+}
+
+.flex-item-1 {
+  order: 1;
+  flex-grow: 1;
+}
+
+.flex-item-2 {
+  order: 2;
+  flex-grow: 1;
+}
+
+.flex-item-3 {
+  order: 3;
+  flex-grow: 1;
+}
+
+.flex-item-4 {
+  order: 4;
+  flex-grow: 1;
+}
+
+/* profile page */
+
+/* al reducir el tamaño del navegador, el texto no se adapta al ancho del navegador. Me estoy fijando en "width", pero creo que el problema es otro y no sé cuál es. */
+
+@media (min-width: 600px) {
+  .grid-container-profile {
+    float: none;
+    display: block;
+    width: fit-content;
+  }
+}
+
+.grid-container-profile {
+  float: none;
+  margin: 50px 20px 50px 20px;
+  width: fit-content;
+  text-align: justify;
+}
+
+
+/* contact page with Bootstrap */
+
+/*si reduzco el navegador, el formulario no se reduce, pero el mapa si. No he conseguido resolver este problema con la media query de abajo. ¿Hay alguna sugerencia? */
+
+@media (min-width: 600px) {
+
+.container-contact {
+  padding-top:30px;
+  padding-bottom:20px;
+  width: auto;
+  }
+
+}
+
+.btn {
+  background-color: #A8030D;
+  width: 100px;
+  height: 40px;
+  font-family: "Arial", sans-serif;
+}
+#contact-details {
+  margin-top: 20px;
+}
+
+/* footer section with grid layout */
+.grid-container {
+  display: grid;
+  color: black;
+  background-color: #A8030D;
+  padding: 10px;
+  justify-items: center;
+}
+
+@media screen and (max-width: 600px) {
+  .grid-container {
+    float: left;
+    display: block;
+    width: 50%;
+  }
+}
+
+.grid-item1 {
+  grid-row: 1;
+  grid-column: 1;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.grid-item2 {
+  padding: 8px;
+  grid-row: 1;
+  grid-column: 2;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.grid-item2 img {
+  max-width: 75%;
+}
+
+.grid-item3 {
+  grid-row: 1;
+  grid-column: 3;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
