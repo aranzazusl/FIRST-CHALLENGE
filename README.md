@@ -13,3 +13,6 @@ No he podido hacer que las cuatro cajas tengan todas el mismo ancho cuando no ha
 
 <b>3. Bootstrap:</b>
 Al reducir el tamaño del navegador, el texto no se adapta al ancho del navegador. Me estoy fijando en "width", pero creo que el problema es otro y no sé cuál es.
+
+<b>4. Bootstrap:</b>
+He tenido problemas para commit usando Git Bash, pero usando la versión de escritorio de GitHub, he podido hacerlo. Git Bash no me reconocía la carpeta donde tenía los archivos (guardada en Escritorio). ¿Cuál es la mejor ubicación en la que guardar los retos de forma local?
